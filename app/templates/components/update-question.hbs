@@ -1,0 +1,14 @@
+{{#if updateQuestionFormShow}}
+  <h2>Update "{{question.title}}"</h2>
+  <form class="form-group">
+    <label for="title">Question</label>
+    {{input value=title placeholder=question.title class='form-control'}}<br>
+    <label for="author">Your Nickname</label>
+    {{input value=author placeholder=question.author class='form-control'}}<br>
+    <label for="note">Content</label>
+    {{textarea value=content placeholder=question.note class='form-control' rows="18" cols="50"}}<br>
+    <button {{action 'update' question}} class="btn btn-default">Save</button>
+  </form>
+{{else}}
+  <button {{action 'showUpdateQuestionForm'}}>Update This Question</button>
+{{/if}}

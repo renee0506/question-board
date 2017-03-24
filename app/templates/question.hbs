@@ -1,6 +1,7 @@
 <h1>{{model.title}}</h1>
 <h3>{{model.author}}</h3>
 <p>{{model.note}}</p>
+{{update-question question=model update="update"}}
 
 <ul>
   {{#each model.answers as |answer|}}
