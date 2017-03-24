@@ -1,5 +1,5 @@
 <ul>
   {{#each model as |question|}}
-  <li>{{question.title}}<br>--{{question.author}}</li>
+  <li>{{#link-to 'question' question.id}}{{question.title}}<br>--{{question.author}}{{/link-to}}</li>
   {{/each}}
 </ul>
