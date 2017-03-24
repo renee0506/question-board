@@ -33,3 +33,45 @@ header {
   box-shadow: 0px 1px 50px #5E5E5E;
   z-index:5;
 }
+
+h3 {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.body-content {
+  background-color: white;
+  box-shadow: 0px 1px 30px #5E5E5E;
+}
+
+.question {
+  padding:50px;
+}
+
+.question:hover {
+  background-color: #e0e0e0;
+}
+
+.question-content {
+  background-color: white;
+  box-shadow: 0px 1px 30px #5E5E5E;
+  padding: 50px;
+}
+
+.answerer {
+  text-align: right;
+  font-style: italic;
+  margin-left: 60%;
+}
+
+.answers {
+  margin-top: 20px;
+}
+
+.answers p {
+  line-height: 2;
+}
+
+body {
+  background-image: url(http://jruisoft.com/wp-content/uploads/2017/02/Wood-Table-Background-91-with-Wood-Table-Background.jpg);
+}

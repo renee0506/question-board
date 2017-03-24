@@ -1,12 +1,23 @@
-<h1>{{model.title}}</h1>
-<h3>{{model.author}}</h3>
-<p>{{model.note}}</p>
-{{update-question question=model update="update"}}
+<div class="col-md-8 question-content">
+  <h2>{{model.title}}</h2>
+  <h4>{{model.author}}</h4>
+  <p>{{model.note}}</p>
+  {{update-question question=model update="update"}}
+<hr>
+  <h4>Answers</h4>
+  <ul class="list-unstyled">
+    {{#each model.answers as |answer|}}
+    <li>
+      <div class="row answers">
+        <div class="col-md-10">
+          <p>{{answer.content}}</p><br>
+          <span class="answerer">Answered By: {{answer.author}}</span>
+          <hr>
+        </div>
+      </div>
+    </li>
+    {{/each}}
+  </ul>
 
-<ul>
-  {{#each model.answers as |answer|}}
-  <li>{{answer.content}}<br>--{{answer.author}}</li>
-  {{/each}}
-</ul>
-
-{{new-answer question=model saveAnswer="saveAnswer"}}
+  {{new-answer question=model saveAnswer="saveAnswer"}}
+</div>

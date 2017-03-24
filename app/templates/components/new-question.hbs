@@ -9,6 +9,7 @@
     <label for="content">Content</label>
     {{textarea value=content class='form-control' rows="18" cols="50"}}<br>
     <button {{action 'saveQuestion'}} class="btn btn-default">Save</button>
+    <button {{action 'hideQuestionForm'}} class="btn btn-default">Cancel</button>
   </form>
 </div>
 {{else}}

@@ -6,6 +6,9 @@ export default Ember.Component.extend({
     showQuestionForm(){
       this.set("questionFormShow", true)
     },
+    hideQuestionForm(){
+      this.set("questionFormShow", false)
+    },
     saveQuestion(){
       var params = {
         title: this.get('title'),

@@ -9,8 +9,9 @@
     <label for="note">Content</label>
     {{textarea value=content placeholder=question.note class='form-control' rows="18" cols="50"}}<br>
     <button {{action 'update' question}} class="btn btn-default">Save</button>
+    <button {{action 'hideUpdateQuestionForm'}} class="btn btn-default">Cancel</button>
   </form>
 </div>
 {{else}}
-  <button {{action 'showUpdateQuestionForm'}}>Update This Question</button>
+  <button {{action 'showUpdateQuestionForm'}} class="btn btn-default btn-sm">Update This Question</button>
 {{/if}}

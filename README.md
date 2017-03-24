@@ -1,5 +1,5 @@
 # Q&A-Board
-#### _Renee Mei_
+#### _Renee Mei, March 2017_
 _A web application for posting and answering questions_
 
 ## Description
@@ -17,7 +17,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/renee0506/question-board.git`
 * `cd question-board`
 * `npm install`
 * `bower install`
