@@ -1,0 +1,12 @@
+{{#if answerFormShow}}
+  <h2>Add New Comment</h2>
+  <form class="form-group">
+    <label for="author">Your Name</label>
+    {{input value=author class='form-control'}}<br>
+    <label for="content">Content</label>
+    {{textarea value=content class='form-control' rows="18" cols="50"}}<br>
+    <button {{action 'saveAnswer'}} class="btn btn-default">Save</button>
+  </form>
+{{else}}
+  <button {{action 'showAnswerForm'}}>Share Your Answer</button>
+{{/if}}
