@@ -1,0 +1,14 @@
+{{#if questionFormShow}}
+  <h2>Post New Question</h2>
+  <form class="form-group">
+    <label for="title">Question</label>
+    {{input value=title class='form-control'}}<br>
+    <label for="author">Your Nickname</label>
+    {{input value=author class='form-control'}}<br>
+    <label for="content">Content</label>
+    {{textarea value=content class='form-control' rows="18" cols="50"}}<br>
+    <button {{action 'saveQuestion'}} class="btn btn-default">Save</button>
+  </form>
+{{else}}
+  <button {{action 'showQuestionForm'}}>Post New Question</button>
+{{/if}}

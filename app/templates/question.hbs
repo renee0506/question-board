@@ -2,4 +2,10 @@
 <h3>{{model.author}}</h3>
 <p>{{model.note}}</p>
 
+<ul>
+  {{#each model.answers as |answer|}}
+  <li>{{answer.content}}<br>--{{answer.author}}</li>
+  {{/each}}
+</ul>
+
 {{new-answer question=model saveAnswer="saveAnswer"}}
