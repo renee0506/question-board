@@ -1,0 +1,11 @@
+<div class="row answers">
+  <div class="col-md-2">
+    <h4>{{answer.upvote}}<br>upvotes</h4>
+    <button {{action 'upvote' answer}} class="btn btn-default btn-xs">Like</button>
+  </div>
+  <div class="col-md-10">
+    <p>{{answer.content}}</p><br>
+    <span class="answerer">Answered By: {{answer.author}}</span>
+    <hr>
+  </div>
+</div>

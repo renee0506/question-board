@@ -8,13 +8,7 @@
   <ul class="list-unstyled">
     {{#each model.answers as |answer|}}
     <li>
-      <div class="row answers">
-        <div class="col-md-10">
-          <p>{{answer.content}}</p><br>
-          <span class="answerer">Answered By: {{answer.author}}</span>
-          <hr>
-        </div>
-      </div>
+      {{answer-tile answer=answer upvote='upvote'}}
     </li>
     {{/each}}
   </ul>
