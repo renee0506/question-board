@@ -1,8 +1,10 @@
-# question-board
+# Q&A-Board
+#### _Renee Mei_
+_A web application for posting and answering questions_
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+## Description
 
+The application is create for users to post questions and answer other people's questions. Users can post new question by clicking on the *post new question* button on the index page, or click into one question to view details. users can also update posted question and also post their answers under a question.
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
