@@ -1,6 +1,5 @@
-<ul>
+<ul class="list-unstyled">
   {{#each model as |question|}}
-  <li>{{#link-to 'question' question.id}}{{question.title}}<br>--{{question.author}}{{/link-to}}</li>
+    {{question-tile question=question}}
   {{/each}}
 </ul>
-{{new-question saveQuestion="saveQuestion"}}

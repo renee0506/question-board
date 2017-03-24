@@ -1,4 +1,5 @@
 {{#if updateQuestionFormShow}}
+<div class="form-div">
   <h2>Update "{{question.title}}"</h2>
   <form class="form-group">
     <label for="title">Question</label>
@@ -9,6 +10,7 @@
     {{textarea value=content placeholder=question.note class='form-control' rows="18" cols="50"}}<br>
     <button {{action 'update' question}} class="btn btn-default">Save</button>
   </form>
+</div>
 {{else}}
   <button {{action 'showUpdateQuestionForm'}}>Update This Question</button>
 {{/if}}

@@ -1,4 +1,5 @@
 {{#if questionFormShow}}
+<div class="form-div">
   <h2>Post New Question</h2>
   <form class="form-group">
     <label for="title">Question</label>
@@ -9,6 +10,7 @@
     {{textarea value=content class='form-control' rows="18" cols="50"}}<br>
     <button {{action 'saveQuestion'}} class="btn btn-default">Save</button>
   </form>
+</div>
 {{else}}
-  <button {{action 'showQuestionForm'}}>Post New Question</button>
+  <button {{action 'showQuestionForm'}} class="btn btn-default navbar-btn">Post New Question</button>
 {{/if}}
